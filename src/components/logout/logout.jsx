@@ -1,7 +1,7 @@
 import styles from './logout.module.scss'
 import { useAuthentication } from "../../hooks/useAuthentication"
 import { signOut,getAuth } from "firebase/auth"
-import { useAuthValue } from '../../context/Authcontext'
+import { useAuthValue } from '../../context/AuthContext'
 import {RxExit} from 'react-icons/rx'
 
 
