@@ -5,7 +5,7 @@ import Link from 'next/link'
 //hooks
 
 
-import { useAuthValue } from '../../context/Authcontext'
+import { useAuthValue } from '../../context/AuthContext'
 import Logout from '../logout/logout'
 
 
