@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 import { useAuthentication } from '../hooks/useAuthentication'
 
 //context 
- import { AuthProvider } from '../context/Authcontext'
+ import { AuthProvider } from '../context/AuthContext'
  import { onAuthStateChanged } from 'firebase/auth'
 
 
