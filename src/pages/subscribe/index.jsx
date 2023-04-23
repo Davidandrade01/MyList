@@ -5,7 +5,7 @@ import  Head  from 'next/head'
 import { useState,UseEffect, useEffect } from 'react'
 import { useAuthentication } from '../../hooks/useAuthentication'
 import { useRouter } from 'next/navigation'
-import { useAuthValue } from '../../context/Authcontext'
+import { useAuthValue } from '../../context/AuthContext'
 
 
 

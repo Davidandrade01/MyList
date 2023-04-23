@@ -4,7 +4,7 @@ import Link from 'next/link'
 import {useAuthentication} from '../../hooks/useAuthentication'
 import { useState, useEffect } from 'react'
 import {getAuth, signInWithEmailAndPassword } from "firebase/auth"
-import { useAuthValue } from '../../context/Authcontext'
+import { useAuthValue } from '../../context/AuthContext'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/navigation'
 
