@@ -37,7 +37,7 @@ export default function Login(){
         password:password
 
        }
-        const res =await Log(user)
+        const res =await Log(user) 
         console.log(res)
 
         

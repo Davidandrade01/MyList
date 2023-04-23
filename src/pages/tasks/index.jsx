@@ -118,14 +118,14 @@ const today=date.toDateString()
      <main className={styles.container}>
           
       <form >
-        <input type="text" placeholder="task..."
+        <input type="text" placeholder="Type a new task..."
 
         value={newtask}
         onChange={(e)=>setNewTask(e.target.value)} />
       
        
         {saveBtn  ?   ( <button onClick={handleAddtask}  type="submit" >
-        <FiPlus size={25} color='#17181f'/>
+        <FiPlus size={25} color='#f2f2f2'/>
         </button>):
          
         (<button onClick={handleAddtask}  type="submit" >
@@ -135,7 +135,7 @@ const today=date.toDateString()
       </form>
       
 
-      <h1>Task List:</h1> 
+      <h1> My  List:</h1> 
         
 
       
@@ -146,31 +146,32 @@ const today=date.toDateString()
           
           <ul>
 
-          {tasks.map((element)=><li  key={element.id}><p>{element.title}</p>
+          {tasks.map((element)=><li  key={element.id}><h1>{element.title}</h1>
           
              <div className={styles.actions}> 
               
                 <div className={styles.rightBtns}>
-                  <div><FiCalendar size={15} color='#ffb800'/>
+                  <div><FiCalendar size={15} />
                   <time>{today}</time>
                   </div>
                   
                     <button onClick={()=>handleEdit(element.id)}>
                       <span>
-                        <FiEdit2 size={15}color='#fff' /> Edit
+                        <FiEdit2 size={15} /> Edit
                       </span>
                   
                     </button>
                 </div>
                
             <button onClick={()=>handleDelete(element.id)}>
-              <FiTrash size={15} color='#ff3636'/>
-              <span>Erase</span>
+              <FiTrash size={15} color="red"/>
+              <span style={{color: "red"}}>Erase </span>
             </button>
           </div>
-          
+          <hr style={{color: "#f2f2f2"}}/>
           </li>)}
          </ul>
+         
         </article>
       </section>
      </main>

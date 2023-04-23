@@ -42,6 +42,8 @@ export const useAuthentication = () => {
         displayName: data.displayName,
       });
 
+      
+
       setLoading(false);
 
       return user;

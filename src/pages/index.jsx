@@ -9,13 +9,13 @@ export default function Home() {
     <><title>My List</title>
     <div className={styles.home}>
     
-    <Image src='/image/mylist.png' width={700} height={500} alt={"MyList-todo"} />
+    <Image src='/image/mylist.png' width={700} height={400} alt={"MyList-todo"} />
 
      <div className={styles.brand}>
-       <h1>Plan, edit, create, set goals.
-       Make the most of your day Use <b>My LIST</b></h1>
+       <h1>Plan, edit, create, set goals.</h1>
+       <h2>Make the most of your day.Use <b>My LIST</b></h2>
        <button>
-         <Link href='/login'>Plan, now!</Link>
+         <Link href='/login'> <b>PLAN WITH MY LIST!</b></Link>
        </button>
      </div>
     </div>
